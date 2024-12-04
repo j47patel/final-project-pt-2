@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Aleo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  
     <title>The Stratford Art Museum</title>
     <style>
         body {
@@ -42,18 +47,26 @@
         }
       
       .container {
+        
           position: relative;
           text-align: left;
           color: white;
         }
+      
+      .container img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
 
 
       .title {
+          font-family: "Albert Sans", sans-serif;
           position: absolute;
           top: 40px;
           left: 60px;
           font-size: 140px;
-          font-weight: bold;
+          
           color: white;
         }
       
@@ -62,6 +75,7 @@
         }
       
       .heading1, .heading2, .heading3 {
+            font-family: "Albert Sans", sans-serif;
             position: absolute;
             top: 800px;
             left: 60px; 
@@ -80,6 +94,7 @@
       }
       
       .more {
+            font-family: Aleo, serif;
             text-align: right;
             top: 910px;
             right: 1000;
@@ -127,14 +142,14 @@
       }
       
       .exhibition-name1, .exhibition-name2, .exhibition-name3, .exhibition-name4, .exhibition-name5, .exhibition-name6 {
+            font-family: "Aleo", serif;
             position: absolute;
             top: 1250px;
             left: 60px;
             font-size: 24px;
-            font-weight: bold;
             color: black;
             text-align: left;
-            width: 240px;
+            width: 260px;
         }
       
       .exhibition-name2 {
@@ -161,11 +176,12 @@
       }
       
       .exhibition-date1, .exhibition-date2, .exhibition-date3, .exhibition-date4, .exhibition-date5, .exhibition-date6 {
+            font-family: Aleo, serif;
             position: absolute;
             top: 1280px;
             left: 61px;
             font-size: 20px;
-            font-weight: bold;
+            font-style: italic;
             color: black;
             text-align: left;
             width: 200px;
@@ -194,15 +210,16 @@
             top: 1980px;
       }
       
-    .chart-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    
-}
+      .chart-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 20px;
+
+      }
       
       table {
+            font-family: Aleo, serif;
             position: relative;
             left: 61;
             top: 1430px;
@@ -222,6 +239,8 @@
         }
         
       .button {
+          font-family: Aleo, serif;
+          font-weight: bold;
           border: none;
           color: #D4B682;
           left: 250;
@@ -281,12 +300,14 @@
         }
       
       footer form input[type="email"] {
+            font-family: Aleo, serif;
             padding: 10px;
             font-size: 16px;
             margin-right: 10px;
         }
       
        footer form input[type="submit"] {
+            font-family: Aleo, serif;
             padding: 5px 20px;
             background-color: #D4B682;
             color: black;
@@ -316,13 +337,14 @@
 </ul>
   
 <div class="container">
-    <img src="AdobeStock_618178757.jpeg" alt="Man in museum" width="1280" height="573">
+    <img src="AdobeStock_618178757.jpeg" alt="Man in museum" width="100%" height="auto">
     <div class="title">
         <span>The</span>
         <span>Stratford</span>
         <span>Art Gallery</span>
-  </div>
+    </div>
 </div>
+
   
   <h2 class="heading1">Now on Display</h2>
   <h2 class="heading2">Previous Exhibits</h2>
