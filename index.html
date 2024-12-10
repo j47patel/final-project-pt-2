@@ -239,73 +239,60 @@ Date retrieved: [November 30, 2024] */
             top: 2077px;
       }
       
-      .chart-container {
+      .table-container {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: flex-start;
-          gap: 20px;
-
+          flex-wrap: wrap;
+          gap: 80px;
+          margin-top: 1600px;
+          left: 70px;
+          position: relative;
       }
-      
+
       table {
           font-family: Aleo, serif;
-          position: relative;
-          left: 70px;
-          top: 1580px;
           border-collapse: collapse;
-          width: 50%;
-      }
-      
-      table, th, td {
+          max-width: 500px;
+          width: 100%;
           border: 3px solid #D4B682;
       }
-      
+
       th, td {
           padding: 10px;
           text-align: left;
-          
       }
-        
+
+      .buttons {
+          display: flex;
+          flex-direction: row;
+          margin-top: 70px;
+          gap: 30px;
+      }
+
       .button {
           font-family: Aleo, serif;
           font-weight: bold;
           border: none;
-          color: #D4B682;
-          left: 650;
-          top: 1600px;
-          margin-right: 35px;
-          padding: 16px 32px;
-          text-align: center;
-          font-size: 25px;
-          position: relative;
+          padding: 20px 20px;
+          font-size: 24px;
           cursor: pointer;
           border-radius: 10px;
+          background-color: #D4B682;
+          color: black;
+          text-align: center;
+          width: 250px;
       }
 
-      .button1 {
-        background-color: #D4B682; 
-        color: black; 
-      }
-
-      .button1:hover {
-        background-color: #BA9F6F;
-        color: white;
-      }
-
-      .button2 {
-        background-color: #D4B682; 
-        color: black;
-      }
-
-      .button2:hover {
-        background-color: #BA9F6F;
-        color: white;
+      .button:hover {
+          background-color: #BA9F6F;
+          color: white;
       }
       
       footer {
         background-color: #ECDEC5;
         padding: 20px 5px;
-        top: 1750px;
+        top: 120px;
         width: 100%;
         position: relative;
         text-align: center;
@@ -425,7 +412,7 @@ Date retrieved: [November 30, 2024] */
   <div class="exhibition-date5">March 2020</div>
   <div class="exhibition-date6">June 2018</div>
   
-<div class="chart-container">
+<div class="table-container">
     <table>
         <tr>
             <td>Adults</td>
