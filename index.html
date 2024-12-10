@@ -141,6 +141,30 @@
             height: 396px;
       }
       
+    .painting-container {
+        position: absolute;
+    }
+
+    .painting-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .painting-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .painting-container:hover .overlay {
+        opacity: 1;
+    }
+      
       .exhibition-name1, .exhibition-name2, .exhibition-name3, .exhibition-name4, .exhibition-name5, .exhibition-name6 {
             font-family: "Aleo", serif;
             position: absolute;
@@ -350,14 +374,36 @@
   
   <div class="view-all1">View All</div>
   <div class="view-all2">View All</div>
-
-  <img class="painting1" src="AdobeStock_308234641_Editorial_Use_Only.jpeg" alt="painting">
-  <img class="painting2" src="AdobeStock_79670018.jpeg" alt="painting">
-  <img class="painting3" src="AdobeStock_419088842_Editorial_Use_Only.jpeg" alt="painting">
   
-  <img class="painting4" src="AdobeStock_135490522.jpeg" alt="painting">
-  <img class="painting5" src="AdobeStock_64033639.jpeg" alt="painting">
-  <img class="painting6" src="AdobeStock_681714886.jpeg" alt="painting">
+  <div class="painting-container painting1">
+    <img src="AdobeStock_308234641_Editorial_Use_Only.jpeg" alt="History Unraveled">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="painting-container painting2">
+    <img src="AdobeStock_79670018.jpeg" alt="European Architecture">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="painting-container painting3">
+    <img src="AdobeStock_419088842_Editorial_Use_Only.jpeg" alt="World Famous">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="painting-container painting4">
+    <img src="AdobeStock_135490522.jpeg" alt="From the Garden">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="painting-container painting5">
+    <img src="AdobeStock_64033639.jpeg" alt="Rural America">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="painting-container painting6">
+    <img src="AdobeStock_681714886.jpeg" alt="Russian Architecture">
+    <div class="overlay"></div>
+  </div>
   
   <div class="exhibition-name1">History Unraveled</div>
   <div class="exhibition-name2">European Architecture</div>
